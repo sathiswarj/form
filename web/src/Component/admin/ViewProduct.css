@@ -1,0 +1,15 @@
+.heading {
+    flex: 1;
+}
+
+.product-section {
+    display: flex;
+}
+input.form-control {
+    margin-top: 9px;
+    margin-right: 41px;
+}
+.form-group {
+    margin-bottom: 15px;
+    margin-right: 30px;
+}

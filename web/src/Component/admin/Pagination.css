@@ -1,0 +1,11 @@
+.pagination {
+    display: flex;
+}
+
+.pagination>li {
+    position: relative;
+    display: inline;
+    margin-right: 4px;
+    bottom: 0;
+    top: -14px;
+}

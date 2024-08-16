@@ -1,0 +1,23 @@
+.header {
+  background-color: rgba(230, 236, 237);
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+} 
+.header-menu {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 3px 10px;
+}
+
+.header-menu li {
+  color: black;
+  margin-right: 20px;  
+  cursor: pointer;
+}
+
+ 
+.header-menu li:last-child {
+  margin-right: 0;  
+}

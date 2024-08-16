@@ -1,0 +1,89 @@
+ 
+* {
+    margin: auto;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+ header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 100px;
+    gap: 19%;
+    position: relative;
+}
+
+ 
+.hamburger {
+    display: none;
+}
+
+ 
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a {
+    display: block;
+    padding: 10px 25px;
+    transition: 0.2s;
+    text-decoration: none;
+    color: black;
+}
+p.web-logo {
+     margin-left: -94px;
+}
+ @media only screen and (max-width: 768px) {
+ 
+    .hamburger {
+        position: relative;
+        display: block;
+        left: 77px;
+        font-size: 29px;
+        margin-top: 9px;
+    }
+     .nav-bar {
+        position: absolute;
+        top:100%;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        opacity: 0;
+        overflow: hidden;
+        visibility: hidden;
+        max-height: 0;
+        transition:max-height 0.3s ease,opacity 0.3s ease, visibility 0.3s ease ;
+    }
+
+ 
+    .nav-bar.active {
+     opacity: 1;
+     visibility: visible;
+     max-height: 300px;
+
+    }
+
+ 
+    .nav-bar ul {
+        display: block;
+        color: #fff;
+        width: 100%;
+        margin: 34px auto 0 auto;
+        line-height: 22px;
+        font-size: larger;
+        text-align: center;
+    }
+
+    .nav-bar ul li a {
+        padding: 10px;
+        display: block;
+        background-color: #333;  
+        color: #fff;  
+    }
+}
